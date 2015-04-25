@@ -15,7 +15,7 @@
         android:layout_marginTop="127dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="@string/title_activity_game" />
+        android:onClick="gameButton" />
 
     <Button
         android:layout_width="wrap_content"
@@ -24,17 +24,28 @@
         android:id="@+id/scores"
         android:layout_above="@+id/options"
         android:layout_centerHorizontal="true"
-        android:onClick="@string/title_activity_scores" />
+        android:onClick="scoreButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Options"
+        android:text="Settings"
         android:id="@+id/options"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/scores"
         android:layout_alignStart="@+id/scores"
-        android:layout_marginBottom="123dp" />
+        android:layout_marginBottom="123dp"
+        android:onClick="settingButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/button9"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/options"
+        android:layout_toStartOf="@+id/options"
+        android:onClick="introButton" />
 
 
 </RelativeLayout>

@@ -43,11 +43,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="Menu"
         android:id="@+id/button2"
         android:layout_marginBottom="133dp"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_alignStart="@+id/textView3"
+        android:onClick="mainButton" />
 
 </RelativeLayout>
