@@ -1,5 +1,6 @@
 package com.example.emerald.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -38,8 +39,23 @@ public class MainMenuActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void playButton(View v){
+    public void gameButton(View v){
         Button button = (Button) v;
-        ((Button) v).setText("clicked");
+        startActivity(new Intent(getApplicationContext(), GameActivity.class));
+    }
+
+    public void scoreButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(),Scores.class));
+    }
+
+    public void settingButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(),Settings.class));
+    }
+
+    public void introButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(),MainActivity.class));
     }
 }

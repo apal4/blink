@@ -30,9 +30,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save and Exit"
+        android:text="Menu"
         android:id="@+id/button3"
         android:layout_below="@+id/toggleButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp" />
+        android:layout_marginTop="61dp"
+        android:onClick="mainButton" />
 </RelativeLayout>

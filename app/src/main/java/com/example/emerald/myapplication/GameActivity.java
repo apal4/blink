@@ -1,9 +1,12 @@
 package com.example.emerald.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class GameActivity extends ActionBarActivity {
@@ -35,5 +38,20 @@ public class GameActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void pauseButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(), Paused.class));
+    }
+
+    public void mainButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(),MainMenuActivity.class));
+    }
+
+    public void overButton(View v){
+        Button button = (Button) v;
+        startActivity(new Intent(getApplicationContext(),GameOverActivity.class));
     }
 }

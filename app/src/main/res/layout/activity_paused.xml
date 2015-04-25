@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".GameActivity"
-    android:id="@+id/paused">
+    android:id="@+id/Pa">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,20 +13,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Paused"
         android:id="@+id/textView6"
-        android:layout_marginBottom="82dp"
-        android:layout_above="@+id/button4"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tap to Resume"
-        android:id="@+id/button4"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:enabled="false"
-        android:onClick="@string/title_activity_game" />
+        android:layout_marginTop="128dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,4 +26,14 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/textView6"
         android:layout_toEndOf="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:id="@+id/button4"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:onClick="gameButton" />
 </RelativeLayout>
